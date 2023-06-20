@@ -60,8 +60,14 @@ CREATE TABLE `Child`(
 );
 
 #실습 2-6
-
-
+INSERT INTO `Parent` VALUES('p101', '홍길동', '010-1234-1001');
+INSERT INTO `Parent` VALUES('p102', '임꺽정', '010-1234-1111');
+INSERT INTO `Parent` VALUES('p103', '이성계', '010-1234-1003');
+ 
+INSERT INTO `Child` VALUES('c101' ,'홍길남','010-1234-2001', 'p101');
+INSERT INTO `Child` VALUES('c102' ,'임철수','010-1234-2002', 'p102');
+INSERT INTO `Child` VALUES('c103' ,'이방원','010-1234-2003', 'p103');
+INSERT INTO `Child` VALUES('c104' ,'홍길여','010-1234-2004', 'p101');
 #실습 2-7 
  CREATE TABLE `User4`(
  	`seq` INT PRIMARY KEY AUTO_INCREMENT,
