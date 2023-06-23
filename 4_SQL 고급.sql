@@ -139,6 +139,15 @@ ORDER BY
 	`sale` DESC
 LIMIT 
 	5;
+	
+	
+SELECT * FROM `Sales`
+WHERE 
+	`sale` > 50000 
+ORDER BY 
+	`sale` DESC
+LIMIT 
+	5;
  
 
 #4-6 실습
@@ -241,6 +250,8 @@ SELECT `uid`, `year`, SUM(sale) AS `합계`
 FROM `Sales2`
 GROUP BY `uid`, `year`
 ORDER BY `year` ,`합계`DESC;
+
+
 
 #4-13
 
@@ -349,7 +360,7 @@ SELECT * FROM `Department`
 SELECT * FROM `Member`
 
 SELECT  
-	b.`name`,
+	b.`name` ,
 	c.`name`,
 	b.`pos`,
 	a.`uid`,
