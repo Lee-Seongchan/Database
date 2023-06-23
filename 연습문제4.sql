@@ -392,6 +392,9 @@ LEFT JOIN `book` AS c
 ON b.bookid  = c.bookid
 WHERE b.`saleprice` IS NULL; 
 
+SELECT `name` 
+FROM `Customer`
+WHERE `custId` NOT IN(SELECT DISTINCT `custId` FROM `Order`);
 
 SELECT `name`
 FROM `Customer` AS a 
