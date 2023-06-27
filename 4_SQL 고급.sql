@@ -3,7 +3,7 @@
 #내용 : 4_SQL 고급실습하기
 
 #실습 4-1 
-CREATE TABLE `Member`(
+memberCREATE TABLE `Member`(
 	`uid` VARCHAR(10) PRIMARY KEY,
 	`name` VARCHAR(10) NOT NULL,
 	`hp` CHAR(13) NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `Sales`(
 	`uid` VARCHAR(10) NOT NULL,
 	`year` YEAR NOT NULL,
 	`month` INT NOT NULL,
-	`sale` INT NOT NULL
+	`price` INT NOT NULL
 );
 
 #실습 4-2
@@ -53,42 +53,42 @@ INSERT INTO `Department` VALUES(107, '인사부', '051-512-1007');
 
 
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a101', 2018, 1 , 98100);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2018, 1 , 136000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a103', 2018, 1 , 80100);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2018, 1 , 78000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a105', 2018, 1 , 93000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a101', 2018, 1 , 98100);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2018, 1 , 136000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2018, 1 , 80100);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2018, 1 , 78000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2018, 1 , 93000);
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a101', 2018, 2 , 23500);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2018, 2 , 126000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a103', 2018, 2 , 18500);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2018, 2 , 19000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a105', 2018, 2 , 53000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a101', 2018, 2 , 23500);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2018, 2 , 126000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2018, 2 , 18500);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2018, 2 , 19000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2018, 2 , 53000);
 
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a101', 2019, 1 , 24000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2019, 1 , 109000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a103', 2019, 1 , 101000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2019, 1 , 53500);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a107', 2019, 1 , 24000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a101', 2019, 1 , 24000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2019, 1 , 109000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2019, 1 , 101000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2019, 1 , 53500);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a107', 2019, 1 , 24000);
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2019, 2 , 160000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a103', 2019, 2 , 101000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2019, 2 , 43000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a105', 2019, 2 , 24000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a106', 2019, 2 , 109000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2019, 2 , 160000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2019, 2 , 101000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2019, 2 , 43000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2019, 2 , 24000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a106', 2019, 2 , 109000);
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2020, 1 , 201000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2020, 1 , 63000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a105', 2020, 1 , 74000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a106', 2020, 1 , 122000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a107', 2020, 1 , 111000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2020, 1 , 201000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2020, 1 , 63000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2020, 1 , 74000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a106', 2020, 1 , 122000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a107', 2020, 1 , 111000);
 
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a102', 2020, 2 , 120000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a103', 2020, 2 , 93000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a104', 2020, 2 , 84000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a105', 2020, 2 , 180000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `sale`) VALUES ('a108', 2020, 2 , 76000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2020, 2 , 120000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2020, 2 , 93000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2020, 2 , 84000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2020, 2 , 180000);
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a108', 2020, 2 , 76000);
 
 
 
@@ -105,24 +105,24 @@ SELECT * FROM `Member` WHERE `name` LIKE '김%';
 SELECT * FROM `Member` WHERE `name` LIKE '김__';
 SELECT * FROM `Member` WHERE `name` LIKE '_성_';
 SELECT * FROM `Member` Where `name` LIKE '정_';
-SELECT * FROM `Sales` WHERE `sale` > 50000;
-SELECT * FROM `Sales` WHERE `sale` >= 50000 AND `sale` < 100000 AND `month` = 1;
-SELECT * FROM `Sales`WHERE `sale` BETWEEN 50000 AND 100000;
-SELECT * FROM `Sales` WHERE `sale` NOT BETWEEN 50000 AND 100000; 
+SELECT * FROM `Sales` WHERE `price` > 50000;
+SELECT * FROM `Sales` WHERE `price` >= 50000 AND `price` < 100000 AND `month` = 1;
+SELECT * FROM `Sales`WHERE `price` BETWEEN 50000 AND 100000;
+SELECT * FROM `Sales` WHERE `price` NOT BETWEEN 50000 AND 100000; 
 SELECT * FROM `Sales` WHERE `year` IN(2020);
 SELECT * FROM `Sales` WHERE `month` IN(1, 2);
 
 
 #실습 4-4
-SELECT * FROM `Sales` ORDER BY `sale`;
-SELECT * FROM `Sales` ORDER BY `sale` ASC;
-SELECT * FROM `Sales` ORDER BY `sale` DESC;
-SELECT * FROM `Sales` WHERE `sale` > 50000 ORDER BY `sale` DESC;
-SELECT * FROM `Sales` WHERE `sale` > 50000 
+SELECT * FROM `Sales` ORDER BY `price`;
+SELECT * FROM `Sales` ORDER BY `price` ASC;
+SELECT * FROM `Sales` ORDER BY `price` DESC;
+SELECT * FROM `Sales` WHERE `price` > 50000 ORDER BY `price` DESC;
+SELECT * FROM `Sales` WHERE `price` > 50000 
 ORDER BY 
 	`year`ASC,
 	`month`ASC,
-	`sale` DESC;
+	`price` DESC;
 	
 #실습 4-5
 SELECT * FROM `Sales` LIMIT 5;	
@@ -132,27 +132,27 @@ SELECT * FROM `Sales` LIMIT 1, 2;
 SELECT * FROM `Sales` LIMIT 5, 3;
 SELECT * FROM `Sales`
 WHERE 
-	`sale` > 50000 
+	`price` > 50000 
 ORDER BY 
 	`year` DESC,
 	`month`ASC,
-	`sale` DESC
+	`price` DESC
 LIMIT 
 	5;
 	
 	
 SELECT * FROM `Sales`
 WHERE 
-	`sale` > 50000 
+	`price` > 50000 
 ORDER BY 
-	`sale` DESC
+	`price` DESC
 LIMIT 
 	5;
  
 
 #4-6 실습
-SELECT SUM(`sale`) AS `합계` FROM `Sales`;
-SELECT AVG(`sale`) AS `평균` FROM `Sales`;
+SELECT SUM(`price`) AS `합계` FROM `Sales`;
+SELECT AVG(`price`) AS `평균` FROM `Sales`;
 SELECT COUNT(*) AS `갯수` FROM `Sales`;
 SELECT SUBSTRING(`hp`, 10, 4) AS `전화번호끝자리` FROM `Member`; #start, size
 INSERT INTO `Member`
@@ -160,7 +160,7 @@ INSERT INTO `Member`
 	
 #실습 4-7
 SELECT 
-	SUM(`sale`) AS `총합`
+	SUM(`price`) AS `총합`
 FROM 
 	`Sales` 
 WHERE 
@@ -168,15 +168,15 @@ WHERE
 
 #실습 4-8	
 SELECT 
-	SUM(sale) AS `총합`, 
-	AVG(sale) AS `평균`
+	SUM(price) AS `총합`, 
+	AVG(price) AS `평균`
 FROM `Sales`
 WHERE 
 	`year` = 2019 
 	AND 
 	`month` = 2 
 	AND 
-	`sale` >= 50000;  
+	`price` >= 50000;  
 
 #실습 4-9
 
@@ -190,17 +190,17 @@ SELECT `uid`, `year` FROM `Sales` GROUP BY `uid`,`year`;
 SELECT
 	`uid`, 
 	`year`, 
-	SUM(`sale`) AS `합계` 
+	SUM(`price`) AS `합계` 
 FROM `Sales`
 GROUP BY `uid`, `year`;
 
 SELECT 
 	`uid`,
 	`year`,
-	SUM(`sale`) AS `합계`
+	SUM(`price`) AS `합계`
 FROM `Sales`
 WHERE 
-	`sale` >= 50000
+	`price` >= 50000
 GROUP BY 
 	`uid`, `year`
 ORDER BY 
@@ -211,10 +211,10 @@ ORDER BY
 SELECT 
 	`uid`,
 	`year`,
-	SUM(`sale`) AS `합계`
+	SUM(`price`) AS `합계`
 FROM `Sales`
 WHERE 
-	`sale` >= 50000
+	`price` >= 50000
 GROUP BY 
 	`uid`, `year`
 HAVING 
@@ -237,16 +237,16 @@ SELECT * FROM `Sales2`;
 UNION 
 (SELECT * FROM `Sales2`);
 
-SELECT `uid`, `year`, `sale` FROM `Sales`
+SELECT `uid`, `year`, `price` FROM `Sales`
 UNION 
-SELECT `uid`, `year`, `sale` FROM `Sales2`;
+SELECT `uid`, `year`, `price` FROM `Sales2`;
 
 
-SELECT `uid` ,`year`, SUM(sale) AS `합계`
+SELECT `uid` ,`year`, SUM(price) AS `합계`
 FROM `Sales`
 GROUP BY `uid`, `year`
 UNION
-SELECT `uid`, `year`, SUM(sale) AS `합계`
+SELECT `uid`, `year`, SUM(price) AS `합계`
 FROM `Sales2`
 GROUP BY `uid`, `year`
 ORDER BY `year` ,`합계`DESC;
@@ -283,7 +283,7 @@ WHERE a.dep = b.depNo;
 SELECT 
 	a.`seq`, 
 	a.`uid`, 
-	a.`sale`, 
+	a.`price`, 
 	b.`name`, 
 	b.`pos`	
 FROM `Sales` AS a 
@@ -293,7 +293,7 @@ ON a.uid = b.uid;
 SELECT 
 	a.`seq`, 
 	a.`uid`, 
-	a.`sale`, 
+	a.`price`, 
 	b.`name`, 
 	b.`pos`	
 FROM `Sales` AS a 
@@ -305,12 +305,12 @@ USING(`uid`);
 SELECT 
 	a.`seq`, 
 	a.`uid`, 
-	a.`sale`, 
+	a.`price`, 
 	b.`name`, 
 	b.`pos`	
 FROM `Sales` AS a 
 JOIN `Member` AS b ON a.uid = b.uid
-WHERE `sale` >=100000;
+WHERE `price` >=100000;
 
 SELECT * 
 FROM `Sales` AS a 
@@ -320,7 +320,7 @@ JOIN `Department` AS c ON b.dep = c.depNo;
 
 #실습 4-14
 
-INSERT INTO `Sales`(`uid`, `year`, `month`, `sale`)
+INSERT INTO `Sales`(`uid`, `year`, `month`, `price`)
 	VALUES('p101', 2018, 1, 35000);
 	
 #left join은 inner join이랑 크게 다른게 없음
@@ -348,7 +348,7 @@ ON a.dep = b.depNo;
 
 #실습 4-16
 SELECT 
-	SUM(`sale`) AS `매출합`
+	SUM(`price`) AS `매출합`
 FROM `Sales` AS a
 JOIN `Member` AS b 
 ON a.uid = b.`uid`
@@ -365,11 +365,11 @@ SELECT
 	b.`pos`,
 	a.`uid`,
 	a.`year`,
-	SUM(sale) AS `매출의 합`	
+	SUM(price) AS `매출의 합`	
 FROM `Sales` AS a
 JOIN `Member` AS b ON a.uid = b.uid
 JOIN `Department` AS c ON b.dep = c.depNo
-WHERE `sale` >= 50000 AND `year` = 2019
+WHERE `price` >= 50000 AND `year` = 2019
 GROUP BY  a.`uid`
 HAVING `매출의 합`>=100000
 ORDER BY  `매출의 합` DESC;
